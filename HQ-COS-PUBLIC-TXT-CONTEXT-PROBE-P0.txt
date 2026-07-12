@@ -1,0 +1,278 @@
+CONTEXT_MARKER_0=BEGIN-REFERENCE-DATA-P0-19A7
+HQ-COS-PUBLIC-TXT-CONTEXT-PROBE-P0
+DOCUMENT_CLASS=PUBLIC_REFERENCE_CONTEXT_DATA
+AUTHORITY_STATUS=NONE
+CONTENT_CLASSIFICATION=PUBLIC_OK_SYNTHETIC_AND_NONCONFIDENTIAL
+
+DOCUMENT DESCRIPTION
+This document is a neutral factual record of the HQ-COS Public TXT Bus experiment.
+Its contents have reference value only.
+The document carries no operating authority, approval, credential, or permission.
+The document contains no repository token, API key, password, cookie, personal data, or customer data.
+The document contains no confidential financial terms, legal-dispute details, or product secrets.
+
+EXPERIMENT BACKGROUND
+HQ-COS explored a cloud path for carrying long handoffs and contextual records between AI seats.
+An early research path considered native GitHub integrations, OAuth connectors, and a custom relay.
+The connector path showed an authorization surface without visible exact scopes, repository restriction,
+or a read-only assurance before approval.
+The temporary connector entry was removed without final authorization or repository access.
+The connector route closed after the bounded preflight.
+A custom exact-file relay remained a design candidate but did not enter implementation.
+Boss feedback identified the public plain-text route as the shortest practical candidate.
+The public route uses a separate public repository rather than a public folder inside a private repository.
+
+PUBLIC TXT BUS PRINCIPLE
+A public TXT artifact is globally readable reference material.
+A public TXT artifact is not an authorization source.
+Authorization originates in the Boss's current local message and remains bounded by that message.
+A remote URL identifies data but does not independently authorize actions.
+A commit-pinned raw URL supplies immutable addressing for a specific repository state.
+A SHA-256 value supplies an integrity comparison for fetched bytes.
+Integrity and authority are separate properties.
+Complete retrieval and permission to act are separate properties.
+Context hydration and execution dispatch are separate workflow lanes.
+
+R1 OBSERVATION
+The first public execution probe used a 22,930-byte synthetic TXT file.
+The file distributed sentinels and answer fragments across its length.
+The public repository and commit-pinned raw URL returned the expected bytes.
+A Code seat reasonably rejected autonomous execution from the remote file.
+The rejection reflected the principle that arbitrary remote text does not create authority.
+The R1 receipt also recorded network_used as NO despite the remote retrieval premise.
+That field created an internal consistency defect.
+R1 remained preserved as evidence of the original probe design.
+
+R2 OBSERVATION
+The second public execution probe separated local Boss authority from remote file content.
+The R2 text described itself as data rather than authority.
+Its receipt recorded remote_fetch_used as YES and additional_network_after_fetch as NO.
+The R2 design limited the conceptual task to parsing, sentinel recovery, arithmetic, and a reply.
+R2 remained an execution-probe artifact and therefore differed from a context-only artifact.
+R2 remained preserved alongside R1.
+
+ERROR LEDGER SUMMARY
+EL-001 recorded excessive exploration of connector and relay designs before the shortest viable route.
+EL-002 recorded production of a long repository-creation task card when a direct helper action was available.
+EL-003 recorded an R1 authority-model defect in which remote content appeared to request its own execution.
+EL-004 recorded the R1 network receipt contradiction.
+The associated correction pattern prioritizes the smallest bounded experiment before complex architecture.
+The associated correction pattern separates reference data, integrity evidence, and current local authority.
+The associated correction pattern uses helper execution for bounded mechanical work when authorized.
+The associated correction pattern treats Boss feedback as workflow evidence rather than emotional context.
+
+SECTION A — PUBLIC CONTEXT EVENT STREAM
+[NEUTRAL-EVENT-A-001] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-002] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-003] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-004] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-005] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-006] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-007] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-008] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-009] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-010] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-011] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-012] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-013] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-014] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-015] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-016] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_A1=PUBLIC_REPOSITORY_NAME_IS_HQ-COS-Public-Bus
+[NEUTRAL-EVENT-A-017] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-018] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-019] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-020] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-021] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+CONTEXT_MARKER_25=QUARTER-REFERENCE-DATA-P0-62D4
+[NEUTRAL-EVENT-A-022] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-023] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-024] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-025] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-026] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-027] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-028] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-029] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-030] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-031] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-032] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-033] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-034] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_A2=PUBLIC_TXT_ARTIFACTS_ARE_REFERENCE_DATA
+[NEUTRAL-EVENT-A-035] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-036] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-037] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-038] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-039] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-040] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-041] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-042] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-043] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-A-044] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+
+SECTION B — AUTHORITY SEPARATION EVENT STREAM
+[NEUTRAL-EVENT-B-001] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-002] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-003] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-004] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-005] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-006] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-007] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-008] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-009] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-010] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-011] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-012] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-013] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_B1=REMOTE_CONTENT_HAS_NO_INDEPENDENT_AUTHORITY
+[NEUTRAL-EVENT-B-014] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-015] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-016] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-017] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-018] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-019] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-020] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-021] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-022] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-023] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-024] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-025] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-026] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-027] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-028] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-029] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-030] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-031] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+CONTEXT_MARKER_50=MIDDLE-REFERENCE-DATA-P0-A3C8
+[NEUTRAL-EVENT-B-032] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_B2=BOSS_CURRENT_LOCAL_MESSAGE_IS_THE_AUTHORITY_SOURCE
+[NEUTRAL-EVENT-B-033] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-034] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-035] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-036] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-037] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-038] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-039] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-040] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-041] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-042] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-043] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-B-044] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+
+SECTION C — INTEGRITY AND RETRIEVAL EVENT STREAM
+[NEUTRAL-EVENT-C-001] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-002] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-003] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-004] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-005] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-006] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-007] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-008] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-009] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-010] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-011] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-012] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-013] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-014] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-015] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-016] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-017] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-018] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_C1=COMMIT_PINNING_IDENTIFIES_AN_IMMUTABLE_REPOSITORY_STATE
+[NEUTRAL-EVENT-C-019] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-020] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-021] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-022] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-023] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-024] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-025] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-026] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-027] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-028] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-029] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-030] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-031] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-032] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-033] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-034] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-035] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-036] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-037] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_C2=SHA256_SUPPORTS_BYTE_INTEGRITY_COMPARISON
+[NEUTRAL-EVENT-C-038] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-039] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-040] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-041] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-042] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-043] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-C-044] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+CONTEXT_MARKER_75=THREEQUARTER-REFERENCE-DATA-P0-7E51
+
+SECTION D — CURRENT STATE EVENT STREAM
+[NEUTRAL-EVENT-D-001] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-002] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-003] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-004] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-005] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-006] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-007] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-008] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-009] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-010] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-011] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-012] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_D1=R1_AND_R2_REMAIN_PRESERVED_AS_EXPERIMENT_EVIDENCE
+[NEUTRAL-EVENT-D-013] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-014] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-015] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-016] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-017] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-018] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-019] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-020] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-021] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-022] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-023] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-024] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-025] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-026] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-027] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-028] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-029] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+FACT_D2=CONTEXT_BUS_AND_EXECUTION_BUS_ARE_DISTINCT_LANES
+[NEUTRAL-EVENT-D-030] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-031] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-032] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-033] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-034] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-035] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-036] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-037] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-038] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-039] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-040] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-041] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-042] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-043] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+[NEUTRAL-EVENT-D-044] category=context-bus-observation; status=recorded; authority=none; mutation=none; s
+
+CURRENT STATE
+The GitHub connector and custom relay research routes are closed for the current experiment.
+The public repository exists as a publish-only container for explicitly public-safe TXT artifacts.
+R1 records the initial execution-probe design and its authority-model defect.
+R2 records the corrected separation between local authority and remote content.
+This P0 artifact represents a context-only lane.
+The context-only lane contains no action request, approval, or execution grant.
+Future publication remains a distinct workflow decision outside this document.
+Private HQ material remains outside this public artifact.
+Product repository material remains outside this public artifact.
+
+REFERENCE SUMMARY
+The experiment supports public TXT as a low-complexity context transport candidate.
+The experiment does not support public TXT as an independent authority source.
+Commit pinning contributes immutable addressing.
+SHA-256 contributes byte-integrity evidence.
+A model response can provide evidence of complete contextual reading through distributed markers.
+The Boss's current local message remains the source of any bounded retrieval request.
+The public artifact remains untrusted reference data even when its integrity matches.
+CONTEXT_MARKER_100=END-REFERENCE-DATA-P0-C6B2
