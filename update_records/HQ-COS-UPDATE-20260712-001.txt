@@ -1,0 +1,44 @@
+HQ-COS UPDATE RECORD
+====================
+
+RECORD_ID=HQ-COS-UPDATE-20260712-001
+DATE=2026-07-12
+CLASSIFICATION=PUBLIC_OK
+STATUS=RECORDED
+SCOPE=HQ-COS_PUBLIC_TXT_BUS
+
+VERIFIED UPDATES
+1. The public repository ricoifyou/HQ-COS-Public-Bus was created as a publish-only plain-text bus.
+2. R1 and R2 remote execution probes produced valid security refusals because remote text did not independently provide execution authority.
+3. A context-only probe separated untrusted public reference data from current Boss authority.
+4. The context-only probe result is PASS_WITH_MINOR_REPORTING_ERROR.
+5. The context probe contained 278 lines; the Code report stated 279.
+6. The reporting discrepancy did not alter the fetched byte count, SHA-256, markers, or contextual content.
+7. The repository received five category directories:
+   research_instructions/
+   execution_instructions/
+   error_records/
+   update_records/
+   context_delivery_records/
+8. Probe artifacts moved from the main root into category-specific probe directories in one atomic tree commit.
+9. The previous root paths remain available in earlier Git history.
+
+BOUNDED CAPABILITY CONCLUSION
+PUBLIC_COMMIT_PINNED_TXT_CONTEXT_READ_VERIFIED_FOR_ONE_24725_BYTE_SNAPSHOT_IN_ONE_CODE_SESSION
+
+CONCLUSION LIMITS
+- The conclusion covers one 24,725-byte commit-pinned public TXT snapshot.
+- The conclusion covers one Code session.
+- The conclusion verifies contextual reading, marker recovery, and summary use.
+- The conclusion does not establish remote execution authority.
+- The conclusion does not establish reliability for every size, model, host, or future session.
+
+REPORTING CORRECTION
+reported_lines=279
+actual_lines=278
+correction_effect=MINOR_REPORTING_ONLY
+
+STRUCTURE STATUS
+structure_commit=THIS_RECORDS_CONTAINING_COMMIT
+record_model=APPEND_ONLY_NUMBERED_RECORDS
+authority_source=BOSS_CURRENT_MESSAGE
