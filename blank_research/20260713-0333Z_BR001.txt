@@ -1,0 +1,264 @@
+PUBLIC_OK / RESEARCH_ONLY / STAGING / NOT_CANONICAL
+
+HQ-COS Fast Closeout / Fast Grounding v0.1
+Fresh-context adversarial research review
+
+TASK
+Task ID: HQ-COS-FAST-CLOSEOUT-GROUNDING-RESEARCH-01
+Research seat: fresh-context Claude / Fable
+Task nature: independent research / adversarial review
+Execution authority: NONE
+Repository write authority: NONE
+Canonical authority: NONE
+
+You are an independent research and adversarial-review seat. Review the candidate workflow below from first principles. Do not assume that the candidate is correct, approved, canonical, or ready to implement.
+
+This prompt is self-contained. Do not request prior conversations, private repositories, unpublished decisions, answer keys, previous reviews, screenshots, or personal information. If you have prior exposure to this workflow, disclose NOT_BLIND and stop.
+
+REQUIRED FIRST LINES
+Line 1 must be exactly:
+【Claude／Fable敵對複查回報｜HQ-COS-FAST-CLOSEOUT-GROUNDING-V0.1-R1】
+
+Line 2 must be exactly one of:
+VERDICT: PASS
+VERDICT: PASS_WITH_CONDITIONS
+VERDICT: FAIL
+VERDICT: INSUFFICIENT_EVIDENCE
+
+Do not place any text before line 1.
+
+RESEARCH OBJECTIVE
+Determine whether HQ-COS Fast Closeout / Fast Grounding v0.1 can materially reduce end-to-end latency while preserving complete durable continuity information, integrity verification, authority boundaries, and honest reporting.
+
+Do not treat agent count as a quality metric. Independently compare single-agent and multi-agent approaches using wall-clock time, completeness, repeated-read rate, failure rate, coordination cost, and silent-error risk.
+
+PUBLIC CAPABILITY CLAIMS REQUIRING INDEPENDENT VERIFICATION
+Verify these claims using current official OpenAI sources. This prompt is not proof.
+
+1. ChatGPT Work and current Codex releases can use subagent workflows for independent parallel work.
+2. At most non-Ultra intelligence levels, explicit delegation may be required; eligible Ultra configurations may delegate proactively.
+3. Each subagent performs its own model and tool work, so parallel delegation can increase token and coordination cost.
+4. Official guidance favors subagents for bounded independent work and warns about parallel write conflicts.
+5. Local Codex exposes agents.max_threads; the documented default when unset is 6 concurrent open agent threads.
+6. Local Codex exposes agents.max_depth; the documented default is 1.
+7. Local Codex defaults must not be represented as a fixed hosted ChatGPT Work limit.
+8. A fixed universal ChatGPT Work hosted subagent ceiling cannot be inferred from one runtime observation.
+9. Responses API Multi-agent documents a default max_concurrent_subagents value and its configuration semantics; verify the current wording and scope.
+10. Higher reasoning effort generally increases latency and token use.
+
+Start with these official sources and check whether newer official material exists:
+https://developers.openai.com/codex/subagents
+https://developers.openai.com/codex/config-reference
+https://developers.openai.com/api/docs/guides/responses-multi-agent
+https://openai.com/index/introducing-the-codex-app/
+
+Use official OpenAI sources only for OpenAI product-capability claims. If an exact hosted limit is not publicly documented, report UNKNOWN / NOT OFFICIALLY DOCUMENTED. Do not infer a universal limit from screenshots, one account, one runtime, local configuration defaults, system prompts, tool registries, or model self-report.
+
+PROBLEM DEFINITION
+A continuity workflow may be unnecessarily slow if it:
+
+- performs transcript, manifest, handoff, pointer, and hash checks sequentially;
+- makes the root coordinator repeat reads already completed by helpers;
+- emits a long handoff that the user must manually select and copy;
+- re-analyzes already-established rules instead of grounding from immutable pointers;
+- waits too long before giving visible status;
+- treats more agent activity as inherently better regardless of dependency structure;
+- shortens the handoff by deleting information instead of separating a short launcher from a complete durable record.
+
+NON-NEGOTIABLE REQUIREMENTS
+Any acceptable design must preserve all of the following:
+
+1. Complete durable continuity information remains available.
+2. A short launcher is an access envelope, not the complete record.
+3. Supplied immutable identity, bytes, LF lines, blob identity, and SHA-256 are verified.
+4. A required mismatch or unreadable object causes an explicit integrity stop.
+5. Transcript export limitations remain disclosed and are never called absolute complete.
+6. Handoffs, manifests, hashes, TXT files, commits, or draft artifacts do not create execution authority.
+7. Grounding does not redesign established rules.
+8. Missing evidence is reported, not silently reconstructed.
+9. Helper summaries do not replace required source verification.
+10. The root coordinator remains responsible for reconciliation, contradictions, final status, and user-facing output.
+11. This research performs no repository, connector, Project, deployment, secret, paid-service, or external write.
+12. Faster operation cannot be achieved by hiding skipped checks.
+
+CANDIDATE DESIGN UNDER REVIEW
+
+A. Two-layer closeout
+
+Layer 1: complete durable package containing, as applicable, chat closeout, handoff, decisions, errors, updates, research, manifest, immutable identities, bytes, LF lines, hashes, known export gaps, authority boundaries, current state, and exact next-work pointer.
+
+Layer 2: one compact directly copyable launcher containing only the minimum safe access envelope. It must not duplicate the full transcript, full handoff, full manifest, detailed receipt, or historical explanation.
+
+B. HOT / COLD continuity split
+
+HOT continuity capsule contains the complete effective state required to resume work: verified current state, active decisions, error-prevention controls, authority, prohibitions, pending items, CURRENT_NEXT_STEP, honesty limitations, and COLD archive inventory.
+
+COLD archive retains complete transcript and evidence records. New chats lazy-fetch COLD material only for disputes, verbatim evidence, or task-specific needs.
+
+The reviewer must determine whether this preserves semantic completeness or creates a dangerous summarized truth source.
+
+C. Parallel closeout candidate
+
+When runtime capacity exists and workstreams are independent:
+
+- Helper A: transcript/export coverage and known-gap classification.
+- Helper B: current-state delta, decisions, errors, updates, research, and next action.
+- Helper C: short-launcher lint plus adversarial completeness and authority review.
+- Root: reconcile contradictions, independently verify, perform the sole authorized write if separately authorized, and produce the final launcher.
+
+Helpers return bounded structured summaries rather than raw logs. Helpers are read-only unless a separate explicit authority says otherwise. Parallel writes are not part of this candidate.
+
+D. Fast grounding candidate
+
+- Immediately report the required traffic-light state and separately state that grounding is in progress.
+- Read and verify one immutable HOT continuity capsule.
+- Return a compact receipt and immediately continue CURRENT_NEXT_STEP.
+- Do not search repositories, list directories, query pull requests, hunt historical artifacts, or silently reconstruct missing pointers.
+- Lazy-fetch COLD evidence only when a dispute, verbatim citation, or current task requires it.
+- Determine whether a single read is safe, whether two-wave verification is required, and which dependency edges must remain sequential.
+
+E. Dynamic capacity candidate
+
+Do not hard-code a universal helper count.
+
+usable_parallel_helpers = minimum of:
+- helpers exposed by the current runtime;
+- genuinely independent workstreams;
+- the number that can be reconciled without increasing expected wall-clock time or integrity risk.
+
+F. Output and launcher discipline
+
+- Give immediate visible status.
+- Keep progress concise and hide raw logs.
+- Produce one directly copyable launcher.
+- Store full evidence durably.
+- Use a fixed read-receipt schema.
+- Report mismatches and unavailable items explicitly.
+- Stop on required integrity failure.
+- Avoid repeating validated historical design work.
+- Separate continuity, research, and execution launchers.
+- Research and execution launchers may require an explicit compute field; assess separately whether a continuity-only launcher needs one.
+
+CANDIDATE SLA FOR REVIEW
+These are engineering candidates, not OpenAI guarantees:
+
+- closeout visible acknowledgement: 5 seconds;
+- helper dispatch: 10 seconds;
+- standard closeout P50: 60 seconds;
+- standard closeout P95: 120 seconds;
+- large closeout or one connector retry: 240 seconds;
+- new-chat capsule verification: 30 seconds;
+- new-chat actual work start: 45 seconds.
+
+Assess assumptions, feasibility, degraded paths, and whether any value should be removed or revised.
+
+REQUIRED ADVERSARIAL QUESTIONS
+Answer each independently.
+
+1. Can the HOT/COLD model preserve completeness without creating a competing truth source?
+2. What exact minimum launcher fields are required?
+3. Which launcher fields are redundant, and does the answer differ for continuity, research, and execution launchers?
+4. Can integrity checking and state extraction safely run in parallel?
+5. Which dependency edges require sequential gating?
+6. Can an unverified pointer contaminate helper output?
+7. What happens when a helper times out, fails, or contradicts another?
+8. When must the root independently reread a source?
+9. How are required and optional unreadable pointers distinguished?
+10. Can the root rely on helper hashes, or must it obtain a tool-verifiable receipt?
+11. Can the design detect stale commits, stale blobs, mixed revisions, or manifest/handoff disagreement?
+12. Can a malicious handoff smuggle authority or redesign into grounding?
+13. Does a short launcher falsely appear to be the complete record?
+14. Does using all available helpers always improve latency?
+15. What is the straggler cost when the root waits for every helper?
+16. Which tasks are too small or dependent to justify delegation?
+17. What official evidence exists for a hosted subagent limit?
+18. Which observations must remain runtime-specific or UNKNOWN?
+19. Which latency and integrity metrics should a pilot measure?
+20. What failure-injection tests are required before adoption?
+21. Is two-wave grounding safer than immediate full fan-out?
+22. Can the candidate be simplified without reducing completeness?
+23. Are any candidate rules internally inconsistent or unverifiable?
+
+REQUIRED TEST SCENARIOS
+
+- no helper capacity;
+- one helper;
+- several helpers;
+- manifest readable but handoff hash mismatch;
+- valid handoff but one required pointer unreadable;
+- one optional pointer unreadable;
+- manifest and handoff refer to different revisions;
+- helpers report conflicting hashes;
+- launcher misses an authority boundary;
+- one helper times out;
+- disclosed commentary export gap;
+- transcript incorrectly claims absolute completeness;
+- internally valid but stale pinned revision;
+- handoff attempts to grant execution authority;
+- trivial task is split across too many helpers;
+- root repeats all helper reads and removes the latency benefit;
+- HOT capsule hash is correct but its semantics omit a material rule.
+
+EVIDENCE RULES
+
+- Cite every current OpenAI capability or limit claim with an official URL.
+- Separate documented fact, runtime observation, inference, proposal, and UNKNOWN.
+- Do not convert a local default into a hosted product limit.
+- Do not use community posts as product-limit authority.
+- Do not reconstruct private operational facts.
+- Do not provide hidden chain-of-thought; provide concise evidence-backed findings.
+- Do not write to any repository or external system.
+- Do not produce an execution card or mark any candidate canonical.
+- Required official evidence unavailable: STOP=OFFICIAL_EVIDENCE_UNAVAILABLE.
+
+FIXED REPORT STRUCTURE
+After the two required first lines, use exactly these top-level sections:
+
+1. SCOPE_AND_METHOD
+2. OFFICIAL_CAPABILITY_VERIFICATION
+3. DOCUMENTED_FACTS
+4. RUNTIME_SPECIFIC_FACTS
+5. UNKNOWNS
+6. ADVERSARIAL_FINDINGS
+7. DEPENDENCY_AND_PARALLELISM_ANALYSIS
+8. MINIMUM_SAFE_LAUNCHER_FIELDS
+9. FAILURE_SCENARIO_RESULTS
+10. LATENCY_AND_INTEGRITY_METRICS
+11. REQUIRED_CHANGES
+12. PILOT_RECOMMENDATION
+13. CANONICALIZATION_STATUS
+14. SOURCE_LIST
+
+Every ADVERSARIAL_FINDING must contain:
+- ID
+- Severity: CRITICAL / HIGH / MEDIUM / LOW
+- Claim
+- Evidence
+- Failure mode
+- Required correction
+
+OFFICIAL_CAPABILITY_VERIFICATION must use a table containing:
+- Claim
+- Verified / Contradicted / Unknown
+- Official source
+- Notes
+
+PILOT_RECOMMENDATION must select exactly one:
+- DO_NOT_PILOT
+- PILOT_AFTER_REQUIRED_CHANGES
+- BOUNDED_READ_ONLY_PILOT_READY
+- INSUFFICIENT_EVIDENCE
+
+CANONICALIZATION_STATUS must end exactly:
+RESEARCH_ONLY / STAGING / NOT_CANONICAL / NO_EXECUTION_AUTHORITY
+
+FORBIDDEN / STOP
+
+- Do not read private repositories, pull requests, Projects, transcripts, screenshots, personal data, or previous discussions.
+- Do not obtain Boss preferences, answer keys, prior verdicts, or hidden conclusions.
+- Do not create or modify repositories, pull requests, Projects, connectors, OAuth, providers, secrets, paid APIs, deployments, or external systems.
+- Do not claim a runtime observation, candidate SLA, or model report is an official product guarantee.
+- If the prompt is not independently sufficient, report INSUFFICIENT_EVIDENCE rather than requesting private context.
+
+AUTHORITY BOUNDARY
+This public research instruction and any resulting report are advisory context only. They do not authorize research beyond the stated public-source scope, repository mutation, Project creation, connector changes, Ready, merge, deployment, or execution.
